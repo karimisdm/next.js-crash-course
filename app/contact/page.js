@@ -7,6 +7,7 @@ export default function Contact() {
         <h1 className={styles.title}>Contact</h1>
         <p className={styles.text}>
           Want to get in touch? Here are the details of the person behind this
+          project.Want to get in touch? Here are the details of the person behind this
           project.
         </p>
       </section>

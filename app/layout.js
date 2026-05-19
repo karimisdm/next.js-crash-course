@@ -6,6 +6,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <div className={style.Layout}>
+          <header className={style.Header}>
+            <h1 className={style.Logo}>My Contacts</h1>
+          </header>
           {children}
         </div>
       </body>

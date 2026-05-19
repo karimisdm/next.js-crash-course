@@ -1,8 +1,38 @@
 .Layout {
   max-width: 100%;
   min-height: 100vh;
-  margin:0 auto;
-  padding: 64px 16px 16px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.Header {
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(135deg, #6b21a8 0%, #9333ea 60%, #c084fc 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.Logo {
+  font-size: 36px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 0.04em;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.25);
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .Header {
+    height: 100px;
+  }
+
+  .Logo {
+    font-size: 24px;
+  }
 }
 
 .main {
