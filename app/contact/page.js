@@ -4,56 +4,41 @@ export default function Contact() {
   return (
     <main className={styles.container}>
       <section className={styles.section}>
-        <h1 className={styles.title}>Contact Us</h1>
+        <h1 className={styles.title}>Contact</h1>
         <p className={styles.text}>
-          Have a question, suggestion, or just want to say hi? Fill out the form
-          below and we will get back to you as soon as possible.
+          Want to get in touch? Here are the details of the person behind this
+          project.
         </p>
       </section>
 
       <section className={styles.section}>
-        <h2 className={styles.subtitle}>Send a Message</h2>
-        <form className={styles.form}>
-          <div className={styles.field}>
-            <label className={styles.label} htmlFor="name">
-              Name
-            </label>
-            <input
-              className={styles.input}
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Your name"
-            />
+        <h2 className={styles.subtitle}>Person Details</h2>
+        <div className={styles.card}>
+          <div className={styles.avatar}>JD</div>
+          <div className={styles.info}>
+            <div className={styles.row}>
+              <span className={styles.rowLabel}>Name</span>
+              <span className={styles.rowValue}>John Doe</span>
+            </div>
+            <div className={styles.row}>
+              <span className={styles.rowLabel}>Role</span>
+              <span className={styles.rowValue}>Full-Stack Developer</span>
+            </div>
+            <div className={styles.divider} />
+            <div className={styles.row}>
+              <span className={styles.rowLabel}>Email</span>
+              <a className={styles.rowLink} href="mailto:john@example.com">
+                john@example.com
+              </a>
+            </div>
+            <div className={styles.row}>
+              <span className={styles.rowLabel}>Phone</span>
+              <a className={styles.rowLink} href="tel:+11234567890">
+                +1 (123) 456-7890
+              </a>
+            </div>
           </div>
-          <div className={styles.field}>
-            <label className={styles.label} htmlFor="email">
-              Email
-            </label>
-            <input
-              className={styles.input}
-              type="email"
-              id="email"
-              name="email"
-              placeholder="your@email.com"
-            />
-          </div>
-          <div className={styles.field}>
-            <label className={styles.label} htmlFor="message">
-              Message
-            </label>
-            <textarea
-              className={styles.textarea}
-              id="message"
-              name="message"
-              rows={5}
-              placeholder="Write your message here..."
-            />
-          </div>
-          <button className={styles.button} type="submit">
-            Send Message
-          </button>
-        </form>
+        </div>
       </section>
     </main>
   );
