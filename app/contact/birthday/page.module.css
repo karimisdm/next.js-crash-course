@@ -1,0 +1,146 @@
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  background-color: #fafafa;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  background-color: #fff;
+}
+
+.avatar {
+  flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1;
+}
+
+.name {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.role {
+  font-size: 13px;
+  color: #888;
+}
+
+.birthdayInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.birthdayDate {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--foreground);
+}
+
+.birthdayBadge {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background-color: #f3e8ff;
+  color: #7e22ce;
+}
+
+@media (prefers-color-scheme: dark) {
+  .section {
+    background-color: #111;
+    border-color: #2a2a2a;
+  }
+
+  .text {
+    color: #aaa;
+  }
+
+  .card {
+    background-color: #1a1a1a;
+    border-color: #2a2a2a;
+  }
+
+  .birthdayBadge {
+    background-color: #3b0764;
+    color: #e9d5ff;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 26px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .section {
+    padding: 20px;
+  }
+
+  .card {
+    flex-wrap: wrap;
+  }
+
+  .birthdayInfo {
+    align-items: flex-start;
+    width: 100%;
+  }
+}

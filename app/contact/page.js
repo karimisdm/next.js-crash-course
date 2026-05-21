@@ -1,8 +1,27 @@
+import Link from "next/link";
 import styles from "./page.module.css";
 
 export default function Contact() {
   return (
-    <main className={styles.container}>
+    <div className={styles.layout}>
+      <aside className={styles.sidebar}>
+        <p className={styles.sidebarTitle}>Pages</p>
+        <nav>
+          <ul className={styles.sidebarList}>
+            <li>
+              <Link href="/contact" className={styles.sidebarLink}>
+                Contact
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact/birthday" className={styles.sidebarLink}>
+                🎂 Birthdays
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <main className={styles.container}>
       <section className={styles.section}>
         <h1 className={styles.title}>Contact</h1>
         <p className={styles.text}>
@@ -41,6 +60,7 @@ export default function Contact() {
           </div>
         </div>
       </section>
-    </main>
+      </main>
+    </div>
   );
 }
