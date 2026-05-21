@@ -12,8 +12,10 @@
   background: linear-gradient(135deg, #6b21a8 0%, #9333ea 60%, #c084fc 100%);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 0 40px;
   flex-shrink: 0;
+  box-sizing: border-box;
 }
 
 .Logo {
@@ -25,13 +27,51 @@
   margin: 0;
 }
 
+.Header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Header nav ul li a {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  opacity: 0.85;
+  transition: opacity 0.15s;
+}
+
+.Header nav ul li a:hover {
+  opacity: 1;
+}
+
+.activeLink {
+  opacity: 1 !important;
+  color: #f0abfc !important;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 @media (max-width: 600px) {
   .Header {
     height: 100px;
+    padding: 0 20px;
   }
 
   .Logo {
-    font-size: 24px;
+    font-size: 22px;
+  }
+
+  .Header nav ul {
+    gap: 16px;
+  }
+
+  .Header nav ul li a {
+    font-size: 14px;
   }
 }
 
