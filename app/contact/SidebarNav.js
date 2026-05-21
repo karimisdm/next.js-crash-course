@@ -38,17 +38,22 @@ export default function SidebarNav() {
           <p className={styles.sidebarTitle}>Contacts</p>
           <ul className={styles.contactList}>
             {contacts.map((contact) => (
-              <li key={contact.id} className={styles.contactItem}>
-                <Image
-                  src={contact.image}
-                  alt={`${contact.firstName} ${contact.lastName}`}
-                  width={32}
-                  height={32}
-                  className={styles.contactAvatar}
-                />
-                <span className={styles.contactName}>
-                  {contact.firstName} {contact.lastName}
-                </span>
+              <li key={contact.id}>
+                <Link
+                  href={`/contact/${contact.id}`}
+                  className={`${styles.contactItem} ${pathname === `/contact/${contact.id}` ? styles.activeContact : ""}`}
+                >
+                  <Image
+                    src={contact.image}
+                    alt={`${contact.firstName} ${contact.lastName}`}
+                    width={32}
+                    height={32}
+                    className={styles.contactAvatar}
+                  />
+                  <span className={styles.contactName}>
+                    {contact.firstName} {contact.lastName}
+                  </span>
+                </Link>
               </li>
             ))}
           </ul>

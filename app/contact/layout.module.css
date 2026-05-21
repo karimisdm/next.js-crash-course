@@ -82,10 +82,15 @@
   padding: 6px 8px;
   border-radius: 6px;
   transition: background-color 0.15s;
+  text-decoration: none;
 }
 
 .contactItem:hover {
   background-color: #f0e6ff;
+}
+
+.activeContact {
+  background-color: #f3e8ff;
 }
 
 .contactAvatar {
@@ -125,6 +130,10 @@
 
   .contactItem:hover {
     background-color: #2d1b4e;
+  }
+
+  .activeContact {
+    background-color: #3b0764;
   }
 }
 

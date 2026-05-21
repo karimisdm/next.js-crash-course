@@ -58,6 +58,12 @@
   letter-spacing: 0.03em;
 }
 
+.avatarImg {
+  flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .info {
   display: flex;
   flex-direction: column;
