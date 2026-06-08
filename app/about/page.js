@@ -4,49 +4,44 @@ export default function About() {
   return (
     <main className={styles.container}>
       <section className={styles.section}>
-        <h1 className={styles.title}>About the App</h1>
+        <h1 className={styles.title}>About My Contacts</h1>
         <p className={styles.text}>
-          This is a Next.js crash course application built to demonstrate the
-          core features of Next.js, including file-based routing, server
-          components, layouts, and CSS modules. It serves as a hands-on
-          learning project for developers getting started with Next.js.
+          My Contacts is a personal contact management app where you can browse
+          profiles, view full contact details, and keep track of upcoming
+          birthdays — all in one place.
         </p>
       </section>
 
       <section className={styles.section}>
-        <h2 className={styles.subtitle}>How It Works</h2>
+        <h2 className={styles.subtitle}>What You Can Do</h2>
         <div className={styles.grid}>
           <div className={styles.card}>
-            <strong className={styles.cardTitle}>File-based Routing</strong>
+            <strong className={styles.cardTitle}>Browse Contacts</strong>
             <p className={styles.cardText}>
-              Each folder inside <code className={styles.code}>app/</code> becomes
-              a route. For example,{" "}
-              <code className={styles.code}>app/about/page.js</code> maps to{" "}
-              <code className={styles.code}>/about</code>.
+              See all your contacts listed in the sidebar. Click any name to
+              open their full profile with details like email, phone, and
+              address.
             </p>
           </div>
           <div className={styles.card}>
-            <strong className={styles.cardTitle}>Layouts</strong>
+            <strong className={styles.cardTitle}>View Profiles</strong>
             <p className={styles.cardText}>
-              The <code className={styles.code}>layout.js</code> file wraps all
-              pages with shared UI like headers or navigation.
+              Each contact has a dedicated page showing their name, role, email,
+              phone number, address, and date of birth.
             </p>
           </div>
           <div className={styles.card}>
-           
-            <strong className={styles.cardTitle}>Server Components</strong>
+            <strong className={styles.cardTitle}>Track Birthdays</strong>
             <p className={styles.cardText}>
-              By default, components in Next.js are server-rendered, which
-              improves performance and SEO.
+              The Birthdays page lists all contacts sorted by their upcoming
+              birthday so you never miss an important date.
             </p>
           </div>
           <div className={styles.card}>
-            
-            <strong className={styles.cardTitle}>CSS Modules</strong>
+            <strong className={styles.cardTitle}>Search by Role</strong>
             <p className={styles.cardText}>
-              Styles are scoped per component using{" "}
-              <code className={styles.code}>.module.css</code> files, preventing
-              naming conflicts.
+              On the Birthdays page you can filter contacts by job title to
+              quickly find everyone in a specific role.
             </p>
           </div>
         </div>
